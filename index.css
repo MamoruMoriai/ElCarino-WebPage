@@ -1,0 +1,392 @@
+@charset "utf-8";
+
+
+body{
+  font-family: "Rounded Mplus 1c";
+  background-color: black;
+  color: white;
+}
+
+
+@media screen and (min-width: 480px) {
+
+  table#newses {
+    color: #fff;
+    font-size: 20px;
+    margin: 80px;
+    width: 60%;
+  }
+
+  p#news {
+    color: #fff;
+    font-size: 30px;
+  }
+
+  /* PC用 */
+  img#insta {              /* インスタグラムアイコン */
+    float: left;
+    width: 80px;
+  }
+  img#face {               /* フェイスブックアイコン */
+    float: left;
+    width: 80px;
+  }
+
+  #top {              /* TOPへ戻る */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 15px;
+  }
+  #top a {
+    background: #2A2A2A;
+    text-decoration: none;
+    color: #fff;
+    width: 100px;
+    padding: 30px;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+  }
+  #top a:hover {
+    text-decoration: none;
+    background: #999;
+  }
+
+  div#elcarino {           /* トップ画像 */
+    width: 40%;
+  }
+  img#icon {               /* 各種アイコンのサイズ */
+    width: 100px;
+  }
+  div#menu_icon {          /* メニューアイコン */
+    float: left;
+    width: 10%;
+    padding-left: 35%;
+  }
+  div#maps_icon {          /* マップアイコン */
+    float: left;
+    width: 10%;
+  }
+  div#info_icon {          /* インフォメーションアイコン */
+    float: left;
+    width: 10%;
+  }
+
+  div#menu_img {           /* メニューイメージ */
+    margin-top: 30px;
+    width: 300px;
+  }
+  div#maps_img {           /* マップイメージ */
+    margin-top: 30px;
+    width: 300px;
+  }
+  div#info_img {           /* インフォメーションイメージ */
+    margin-top: 30px;
+    width: 300px;
+  }
+
+  div#instagram {          /* instagram背景 */
+    background: linear-gradient(90deg,#000000 20%,#34B48B 50%,#E94649 50%,#000000 80%);
+    width: 100%;
+    margin-top: 200px;
+  }
+
+  .button {                /* メニューボタン */
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    background: #1A1A1A;
+    width: 40%;
+  }
+  .button {
+  position: relative;
+  display: inline-block;
+  padding: .9em 3.6em;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  transition: all .2s;
+}
+.button::before,
+.button::after {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  z-index: 2;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+}
+.button:hover {
+  color: #fff;
+}
+.button:hover::before,
+.button:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.button:hover::before {
+  border-top-color: #34B48B;
+  border-right-color: #E94649;
+  transition: width .3s, height .3s .3s;
+}
+.button:hover::after {
+  border-bottom-color: #E94649;
+  border-left-color: #34B48B;
+  transition: height .3s, width .3s .3s;
+}
+  .close {
+    color: #000;
+    background: #999;
+  }
+  p#genre {                /* メニュージャンル */
+    font-size: 26px;
+  }
+  p#category {              /* メニューカテゴリ */
+    font-size: 21px;
+  }
+  table#pro {               /* メニューテーブル */
+    font-size: 19px;
+  }
+  ul {                      /* メニュー項目ライン消し */
+    list-style: none;
+    padding-left: 0;
+  }
+  td#wilkinson {            /* wilkinson */
+    font-size: 20px;
+  }
+  p#more {                  /* 詳しくは店長まで */
+    font-size: 20px;
+  }
+  table {                   /* テーブル余白 */
+    padding-bottom: 20px;
+  }
+  td {                      /* テーブル要素余白 */
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  iframe#g_map {            /* GoogleMap */
+    width: 30%;
+    height: 300px;
+  }
+
+  p#access {                /* マップ文書 */
+    font-size: 20px;
+  }
+  p#parking {
+    font-size: 50px;
+  }
+
+  img#parking {
+    width: 30%;
+  }
+  p#parking {
+    font-size: 30px;
+  }
+
+  table#info {              /* インフォメーションテーブル */
+    width: 60%;
+    font-size: 20px;
+  }
+
+  footer {                  /* コピーライト */
+    padding-top: 110px;
+    padding-bottom: 60px;
+    font-size: 20px;
+    font-family: 'Courier New';
+    font-style: oblique;
+  }
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+table#newses {
+  color: #fff;
+  font-size: 12px;
+  margin: 50px;
+  width: 90%;
+}
+
+p#news {
+  color: #fff;
+  font-size: 15px;
+}
+
+/* スマホ用 */
+img#insta {              /* インスタグラムアイコン */
+  float: left;
+  width: 40px;
+}
+img#face {               /* フェイスブックアイコン */
+  float: left;
+  width: 40px;
+}
+
+#top {              /* TOPへ戻る */
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 10px;
+}
+#top a {
+  background: #2A2A2A;
+  text-decoration: none;
+  color: #fff;
+  width: 30px;
+  padding: 15px;
+  text-align: center;
+  display: block;
+  border-radius: 5px;
+}
+#top a:hover {
+  text-decoration: none;
+  background: #999;
+}
+
+img#icon {
+  width: 70px;
+}
+div#menu_icon {          /* メニューアイコン */
+  padding-left: 18px;
+  float: left;
+  width: 30%;
+}
+div#maps_icon {          /* マップアイコン */
+  float: left;
+  width: 30%;
+}
+div#info_icon {          /* インフォメーションアイコン */
+  float: left;
+  width: 30%;
+}
+
+div#menu_img {           /* メニューイメージ */
+  padding-top: 30px;
+  width: 200px;
+}
+div#maps_img {           /* マップイメージ */
+  padding-top: 30px;
+  width: 200px;
+}
+div#info_img {           /* インフォメーションイメージ */
+  padding-top: 30px;
+  width: 200px;
+}
+
+div#instagram {          /* instagram背景 */
+  background: linear-gradient(90deg,#000000 0%,#34B48B 20%,#E94649 80%,#000000 100%);
+  width: 100%;
+  margin-top: 100px;
+}
+
+.button {                /* メニューボタン */
+  text-align: center;
+  padding: 3px;
+  color: #fff;
+  background: #1A1A1A;
+  width: 30%;
+}
+.button {
+position: relative;
+display: inline-block;
+padding: .9em 3.6em;
+color: #fff;
+text-align: center;
+text-decoration: none;
+outline: none;
+transition: all .2s;
+}
+.button::before,
+.button::after {
+position: absolute;
+top: -2px;
+left: -2px;
+z-index: 2;
+content: '';
+width: 0;
+height: 0;
+border: 4px solid transparent;
+}
+.button:hover {
+color: #fff;
+}
+.button:hover::before,
+.button:hover::after {
+width: 100%;
+height: 100%;
+}
+.button:hover::before {
+border-top-color: #34B48B;
+border-right-color: #E94649;
+transition: width .3s, height .3s .3s;
+}
+.button:hover::after {
+border-bottom-color: #E94649;
+border-left-color: #34B48B;
+transition: height .3s, width .3s .3s;
+}
+.close {
+  color: #000;
+  background: #999;
+}
+
+
+p#genre {                /* メニュージャンル */
+  font-size: 20px;
+}
+p#category {              /* メニューカテゴリ */
+  font-size: 16px;
+}
+table#pro {               /* メニューテーブル */
+  font-size: 14px;
+}
+ul {                      /* メニュー項目ライン消し */
+  list-style: none;
+  padding-left: 0;
+}
+td#wilkinson {            /* wilkinson */
+  font-size: 16px;
+}
+p#more {
+  font-size: 14px;
+}
+table {                   /* テーブル余白 */
+  padding-bottom: 15px;
+}
+td {                      /* テーブル要素余白 */
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+iframe#g_map {            /* GoogleMap */
+  width: 80%;
+  height: 250px;
+}
+
+p#access {                /* マップ文書 */
+  font-size: 12px;
+}
+
+img#parking {
+  width: 80%;
+}
+
+table#info {              /* インフォメーションテーブル */
+  width: 90%;
+  font-size: 12px;
+}
+
+footer {                  /* コピーライト */
+  padding-top: 80px;
+  padding-bottom: 40px;
+  font-size: 15px;
+  font-family: 'Courier New';
+  font-style: oblique;
+}
+}
